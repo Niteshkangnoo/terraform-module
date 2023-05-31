@@ -16,7 +16,7 @@ provider "azurerm" {
 
 module "resource_group" {
   source    = "./Resource Group"
-  base_name = "${var.base_name}"
-  location  = "${var.location}"
+  base_name = "tf"
+  location  = "eastus"
 }
 
