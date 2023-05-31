@@ -1,0 +1,14 @@
+terraform init
+terraform fmt
+terraform validate
+terraform plan
+terraform plan -out <filename>
+terraform apply -auto-approve
+terraform apply
+terraform apply <filename>
+terraform state list
+terraform plan -var-file="terraform.tfvars"
+terraform apply -var-file="terraform.tfvars" -auto-approve
+terraform destroy -auto-approve
+terraform destroy -target="module.resource_group.azurerm_resource_group.new_rg"
+terraform destroy -target="azurerm_resource_group.new_rg" (Remove from configuration as well)
